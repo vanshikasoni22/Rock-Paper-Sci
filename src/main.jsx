@@ -19,8 +19,8 @@ function RockPaperScissor(){
     setcomputerans(computerans);
     if (choice===computerans) {
       setResult("Its a tie");
-      } else if (
-      (choice==="rock" && computerans==="scissor")||(choice==="paper" && computerans==="rock")||(choice==="scissor" && computerans==="paper")
+    } else if (
+      (choice==="ROCK🪨" && computerans==="SCISSOR✂️")||(choice==="PAPER📄" && computerans==="ROCK🪨")||(choice==="SCISSOR✂️" && computerans==="PAPER📄")
     
       ) {
       setResult("You win");
@@ -44,6 +44,8 @@ function RockPaperScissor(){
         <h2>Your choice is {urans}</h2>
         <h2>Computer's choice is {computerans}</h2>
         <h2>Result - {result}</h2>
+        <h2>Your score is {yourscore}</h2>
+        <h2>Computer's score is {computerscore}</h2>
       </div>
 );
 }

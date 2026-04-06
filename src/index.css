@@ -127,3 +127,7 @@ code {
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s;
 }
+h2{
+  margin: 16px 0 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
