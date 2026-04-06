@@ -109,3 +109,21 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+#buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 24px 0;
+}
+.button {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 135%;
+  color: var(--text-h);  
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
