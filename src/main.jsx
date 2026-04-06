@@ -8,7 +8,7 @@ function RockPaperScissor(){
   let [urans, seturans]=useState("");
   let [computerans, setcomputerans]=useState("");
   let [result, setResult]=useState("");
-  let choices=["rock", "paper", "scissor"];
+  let choices=["ROCK🪨", "PAPER📄", "SCISSOR✂️"];
   let handleClick=(choice) => {
   seturans(choice);
   let randomselect=Math.floor(Math.random() * choices.length);
@@ -26,9 +26,13 @@ function RockPaperScissor(){
   };
   return (
       <div>
-        <button onClick={()=> handleClick("rock")}>Rock</button>
-        <button onClick={()=> handleClick("paper")}>Paper</button>
-        <button onClick={()=> handleClick("scissor")}>Scissor</button>
+        <h1>Rock Paper Scissor Game</h1>
+        <br></br>
+        <h1>COMPUTER VS YOU</h1>
+        <h3>Let's find out who WINS</h3>
+        <button onClick={()=> handleClick("ROCK🪨")}>Rock</button>
+        <button onClick={()=> handleClick("PAPER📄")}>Paper</button>
+        <button onClick={()=> handleClick("SCISSOR✂️")}>Scissor</button>
         <h2>Your choice is {urans}</h2>
         <h2>Computer's choice is {computerans}</h2>
         <h2>Result - {result}</h2>
